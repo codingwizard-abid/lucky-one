@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Ball from '../Ball/Ball';
+import Cart from '../Cart/Cart';
 import './Shop.css';
 
 
@@ -17,7 +18,7 @@ const Shop = () => {
       const cartItem = [...cart,ball];
       setCart(cartItem)
    }
-   
+
    return (
       <div className='shop-container'>
          <div className="ball-container">
@@ -27,6 +28,7 @@ const Shop = () => {
          </div>
          <div className="cart-container">
             <h2>Cart Summery</h2>
+            <Cart cartItem={cart}></Cart>
          </div>
       </div>
    );
