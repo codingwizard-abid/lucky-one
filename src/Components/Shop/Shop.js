@@ -28,7 +28,9 @@ const Shop = () => {
          </div>
          <div className="cart-container">
             <h2>Cart Summery</h2>
-            <Cart cartItem={cart}></Cart>
+            {
+               cart.map(item => <Cart key={item.id} cartItem={item}></Cart>)
+            }
          </div>
       </div>
    );
