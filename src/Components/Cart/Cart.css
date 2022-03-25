@@ -1,7 +1,13 @@
 .single-ball{
-
+   display: flex;
+   border: 1px solid rgb(145, 221, 145);
+   padding: 5px;
+   border-radius: 8px;
 }
 .single-ball img{
-   width: 55px;
+   width: 60px;
    border-radius: 100px;
+   object-fit: cover;
+   margin-right: 10px;
+
 }
