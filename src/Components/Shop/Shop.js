@@ -6,7 +6,6 @@ import './Shop.css';
 
 const Shop = () => {
    const [balls, setBalls] = useState([]);
-   console.log(balls);
    useEffect(()=>{
       fetch('balls.json')
       .then(res => res.json())
@@ -18,6 +17,25 @@ const Shop = () => {
       const cartItem = [...cart,ball];
       setCart(cartItem)
    }
+
+   const [myOne, setMyOne] = useState([]);
+
+   const chooseForMe = (cart)=>{
+      const randomNum = Math.floor(Math.random() * 4);
+      const myChoosen = cart[randomNum];
+      setMyOne(myChoosen);
+   }
+
+   let addMyOne;
+   if(myOne){
+      addMyOne = myOne.name;
+   }
+
+   const chooseAgain = (cart)=>{
+      const newCart = cart=[];
+      setCart(newCart);
+   }
+
 
    return (
       <div className='shop-container'>
@@ -31,6 +49,13 @@ const Shop = () => {
             {
                cart.map(item => <Cart key={item.id} cartItem={item}></Cart>)
             }
+
+            <h2 style={{color: 'green'}}>You should play with: <em>{addMyOne}</em></h2>
+
+            <div className='button-wrap'>
+               <button onClick={()=> chooseForMe(cart)} className='choose-btn choose-me'>CHOOSE 1 FOR ME</button> <br />
+               <button onClick={()=>chooseAgain(cart)} className='choose-btn choose-again'>CHOOSE AGAIN</button>
+            </div>
          </div>
       </div>
    );
