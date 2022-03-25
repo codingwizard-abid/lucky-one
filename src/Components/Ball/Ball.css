@@ -1,0 +1,62 @@
+.card{
+   background-color: rgba(170, 248, 176, 0.356);
+   height: 500px;
+   position: relative;
+   box-shadow: 1px 1px 30px 5px rgb(0 0 0 / 20%);
+}
+.img-box{
+   background-color: #fff;
+   padding: 10px;
+   border-radius: 10px;
+}
+.img-box img{
+   width: 300px;
+   object-fit: cover;
+   height: 300px;
+   display: block;
+   margin: auto;
+}
+.ball-info{
+   padding: 0 30px;
+}
+.cart-btn{
+   display: inline-block;
+   padding: 12px;
+   border:none;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   color: #fff;
+   background-color: #1f9054;
+   cursor: pointer;
+   font-size: 18px;
+   border-radius: 0 0 4px 4px;
+}
+.cart-btn:hover{
+   background-color: #157441;
+}
+.cart-btn span{
+   font-size: 18px;
+}
+
+@media(max-width: 1200px){
+   .img-box img{
+      width: 200px;
+      object-fit: cover;
+      height: 200px;
+   }
+}
+@media(max-width: 900px){
+   .img-box img{
+      width: 150px;
+      object-fit: cover;
+      height: 150px;
+   }
+}
+@media(max-width: 800px){
+   .img-box img{
+      width: 300px;
+      object-fit: cover;
+      height: 300px;
+   }
+}
