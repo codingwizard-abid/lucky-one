@@ -2,4 +2,6 @@
    max-width: 85%;
    margin: 60px auto;
    border:1px solid rgb(31, 163, 48);
+   padding: 10px;
+   border-radius: 10px;
 }

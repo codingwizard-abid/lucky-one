@@ -35,6 +35,12 @@
    background-color: #dd260ddf;
 }
 
+@media(max-width:1200px){
+   .shop-container{
+      grid-template-columns: 4fr 2fr;
+   }
+}
+
 @media(max-width: 700px){
    .shop-container{
       grid-template-columns: 100%;
