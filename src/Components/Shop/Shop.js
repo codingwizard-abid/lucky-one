@@ -6,6 +6,8 @@ import './Shop.css';
 
 const Shop = () => {
    const [balls, setBalls] = useState([]);
+
+   // load data form json
    useEffect(()=>{
       fetch('balls.json')
       .then(res => res.json())
@@ -20,6 +22,7 @@ const Shop = () => {
 
    const [myOne, setMyOne] = useState([]);
 
+   // handle choose for me button
    const chooseForMe = (cart)=>{
       const randomNum = Math.floor(Math.random() * 4);
       const myChoosen = cart[randomNum];
@@ -31,6 +34,7 @@ const Shop = () => {
       addMyOne = myOne.name;
    }
 
+   // handle choose again button
    const chooseAgain = (cart)=>{
       const newCart = cart=[];
       setCart(newCart);
