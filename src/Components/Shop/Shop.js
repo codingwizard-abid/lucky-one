@@ -45,17 +45,16 @@ const Shop = () => {
             }
          </div>
          <div className="cart-container">
-            <h2>Cart Summery</h2>
+            <h2>Selected Items</h2>
             {
                cart.map(item => <Cart key={item.id} cartItem={item}></Cart>)
             }
-
-            <h2 style={{color: 'green'}}>You should play with: <em>{addMyOne}</em></h2>
 
             <div className='button-wrap'>
                <button onClick={()=> chooseForMe(cart)} className='choose-btn choose-me'>CHOOSE 1 FOR ME</button> <br />
                <button onClick={()=>chooseAgain(cart)} className='choose-btn choose-again'>CHOOSE AGAIN</button>
             </div>
+            <h2 style={{color: 'green'}}>You should play with: <em>{addMyOne}</em></h2>
          </div>
       </div>
    );
