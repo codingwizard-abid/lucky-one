@@ -9,19 +9,19 @@
      "id": "623df20734d7066489886c7b",
      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/%D0%93%D0%B0%D0%BD%D0%B4%D0%B1%D0%BE%D0%BB.jpg",
      "price": 320,
-     "name": "Germany Handball"
+     "name": "Handball"
    },
    {
      "id": "623df20729b601441b63c367",
      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Baseball_%28crop%29.jpg/619px-Baseball_%28crop%29.jpg?20111003031544",
      "price": 350,
-     "name": "Brazilan Baseball"
+     "name": "Baseball"
    },
    {
      "id": "623df207843ff1171eca702f",
      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png",
      "price": 300,
-     "name": "Doutch Basketball"
+     "name": "Basketball"
    },
    {
      "id": "623df2079af0889a4db0b2a3",

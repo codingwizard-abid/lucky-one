@@ -39,23 +39,24 @@
    font-size: 18px;
 }
 
-@media(max-width: 1300px){
-   .card{height: 350px}
-   .img-box{
-      padding: 3px;
-   }
+@media(max-width: 1400px){
    .img-box img{
-      width: 150px;
-      object-fit: cover;
-      height: 150px;
+      width: 280px;
    }
 }
+
+@media(max-width: 1300px){
+   .img-box img{
+      width: 255px;
+   }
+}
+
 @media(max-width: 1200px){
    .card{height: 450px}
    .img-box img{
-      width: 200px;
+      width: 180px;
       object-fit: cover;
-      height: 200px;
+      height: 180px;
    }
 }
 @media(max-width: 900px){
