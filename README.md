@@ -1,6 +1,6 @@
 # The Ball Shop
 
-Website link: (https://github.com/facebook/create-react-app).
+Website link: (https://ball-shop.netlify.app/).
 
 ## Project Description
 
