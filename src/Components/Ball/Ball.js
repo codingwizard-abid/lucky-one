@@ -11,7 +11,7 @@ const Ball = ({ball, addToCart}) => {
          </div>
          <div className="ball-info">
             <h2>{name}</h2>
-            <p>Price: {price}</p>
+            <p>Price: ${price}</p>
          </div>
          <button onClick={()=> addToCart(ball)} className='cart-btn'>Add to cart <span><BsCartCheck/></span></button>
       </div>

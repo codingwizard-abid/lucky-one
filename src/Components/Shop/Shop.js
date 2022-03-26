@@ -32,9 +32,9 @@ const Shop = () => {
    }
 
    const chooseAgain = (cart)=>{
-      addMyOne = '';
       const newCart = cart=[];
       setCart(newCart);
+      addMyOne = myOne.name = ''
    }
 
    return (
