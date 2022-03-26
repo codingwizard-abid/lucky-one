@@ -10,8 +10,9 @@ const Faq = () => {
          </div>
 
          <div className="ans-2">
-            <h3>Difference between props vs state</h3>
-            <p><b>State: </b>
+            <h3>Difference between props vs state?</h3>
+            <p><b>Answer: </b>
+            <b>State: </b>
              The state is an mutable structure that is used to keep data or information of the component and can change each time. The Mutation in state can happen when user click on any event. It is the heart of the react component which decide the behavior of the component and the way it will render. <br />
             <b>Props: </b>
             Props are read-only components. It is an object which contain the value of attributes of a tag and work similar to the HTML attributes. It helps send data from one component to another components. It is similar to function arguments and can be passed to the component the like the way arguments passed in a function. Props are unchangeable so we can't modify the props from inside the component.</p>
